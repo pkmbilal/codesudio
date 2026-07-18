@@ -319,7 +319,7 @@ export default function HomePage() {
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center bg-white/[0.08] border border-white/20 text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-colors hover:bg-white/[0.13]"
+                className="inline-flex items-center bg-white/[0.08] border border-white/20 !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-colors hover:bg-white/[0.13] hover:!text-white"
               >
                 {t.bookCall}
               </a>
