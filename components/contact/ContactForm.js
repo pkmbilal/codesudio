@@ -34,7 +34,7 @@ export function ContactForm() {
           href={waLink}
           target="_blank"
           rel="noopener"
-          className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-xl px-[22px] py-[13px] text-[15px] font-semibold mt-[22px] transition-colors hover:bg-whatsapp-hover"
+          className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-xl px-[22px] py-[13px] text-[15px] font-semibold mt-[22px] transition-colors hover:bg-whatsapp-hover"
         >
           <span className="text-[17px]">✆</span>
           {t.sentCta}
@@ -92,7 +92,7 @@ export function ContactForm() {
         <div className="flex flex-wrap gap-[11px] mt-1">
           <button
             onClick={() => setSent(true)}
-            className="inline-flex items-center gap-[9px] bg-ink text-white border-none rounded-xl px-6 py-3.5 text-[15px] font-semibold cursor-pointer transition-colors hover:bg-brand hover:text-ink"
+            className="inline-flex items-center gap-[9px] bg-ink !text-white border-none rounded-xl px-6 py-3.5 text-[15px] font-semibold cursor-pointer transition-colors hover:bg-brand hover:!text-white"
           >
             {t.submit} <span className="opacity-60">→</span>
           </button>
@@ -100,7 +100,7 @@ export function ContactForm() {
             href={waPrefill}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-xl px-6 py-3.5 text-[15px] font-semibold transition-colors hover:bg-whatsapp-hover"
+            className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-xl px-6 py-3.5 text-[15px] font-semibold transition-colors hover:bg-whatsapp-hover"
           >
             <span className="text-[17px]">✆</span>
             {t.orWhatsapp}

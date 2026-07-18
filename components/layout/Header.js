@@ -57,7 +57,7 @@ export function Header() {
             target="_blank"
             rel="noopener"
             aria-label="WhatsApp"
-            className="grid place-items-center w-10 h-10 rounded-[11px] bg-whatsapp text-white font-bold shrink-0 transition-colors hover:bg-whatsapp-hover"
+            className="grid place-items-center w-10 h-10 rounded-[11px] bg-whatsapp !text-white font-bold shrink-0 transition-colors hover:bg-whatsapp-hover"
           >
             <span className="text-[19px] leading-none">✆</span>
           </a>
@@ -65,7 +65,7 @@ export function Header() {
             href={waLink}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center bg-ink text-white rounded-[11px] px-[18px] py-[11px] text-sm font-semibold transition-colors hover:bg-brand hover:text-ink"
+            className="inline-flex items-center bg-ink !text-white rounded-[11px] px-[18px] py-[11px] text-sm font-semibold transition-colors hover:bg-brand hover:!text-white"
           >
             {t.bookCall}
           </a>

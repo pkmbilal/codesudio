@@ -60,7 +60,7 @@ export function ServiceDetailClient({ slug }) {
                   href={waLink}
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                  className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
                 >
                   <span className="text-lg">✆</span>
                   {t.heroCtaPrimary}
@@ -69,7 +69,7 @@ export function ServiceDetailClient({ slug }) {
                   href={waLink}
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center bg-ink text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold transition-colors hover:bg-brand hover:text-ink"
+                  className="inline-flex items-center bg-ink !text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold transition-colors hover:bg-brand hover:!text-white"
                 >
                   {t.bookCall}
                 </a>
@@ -208,7 +208,7 @@ export function ServiceDetailClient({ slug }) {
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
               >
                 <span className="text-lg">✆</span>
                 {t.heroCtaPrimary}

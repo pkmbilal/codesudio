@@ -56,7 +56,7 @@ export default function HomePage() {
               href={waLink}
               target="_blank"
               rel="noopener"
-              className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-[13px] px-6 py-[15px] text-[15.5px] font-semibold shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+              className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-6 py-[15px] text-[15.5px] font-semibold shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
             >
               <span className="text-lg">✆</span>
               {t.heroCtaPrimary}
@@ -92,7 +92,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="absolute bottom-[22px] start-[22px] flex items-center gap-2.5 bg-ink/[0.8] border border-white/[0.13] rounded-[14px] px-[15px] py-3 backdrop-blur-[6px] pointer-events-none">
-              <span className="grid place-items-center w-[34px] h-[34px] rounded-[9px] bg-whatsapp text-white text-base">
+              <span className="grid place-items-center w-[34px] h-[34px] rounded-[9px] bg-whatsapp !text-white text-base">
                 ✆
               </span>
               <div>
@@ -310,7 +310,7 @@ export default function HomePage() {
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
               >
                 <span className="text-lg">✆</span>
                 {t.heroCtaPrimary}

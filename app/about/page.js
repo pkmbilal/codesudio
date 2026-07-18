@@ -113,7 +113,7 @@ export default function AboutPage() {
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-[9px] bg-whatsapp text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
               >
                 <span className="text-lg">✆</span>
                 {t.heroCtaPrimary}
