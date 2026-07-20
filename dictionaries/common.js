@@ -1,6 +1,8 @@
 export const common = {
   en: {
     bookCall: 'Book a Discovery Call',
+    menuOpen: 'Open menu',
+    menuClose: 'Close menu',
     heroCtaPrimary: 'Chat on WhatsApp',
     waFloat: 'WhatsApp us',
     crumbHome: 'Home',
@@ -19,6 +21,8 @@ export const common = {
     badgeVision: 'Vision 2030 aligned',
   },
   ar: {
+    menuOpen: 'افتح القائمة',
+    menuClose: 'اغلق القائمة',
     bookCall: 'احجز مكالمة استكشافية',
     heroCtaPrimary: 'تواصل عبر واتساب',
     waFloat: 'راسلنا واتساب',

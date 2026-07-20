@@ -5,7 +5,7 @@ import { useLanguage } from '@/lib/language-context';
 import { common } from '@/dictionaries/common';
 import { contact } from '@/dictionaries/contact';
 import { SERVICE_OPTS } from '@/data/contact-service-options';
-import { waLink, buildWaPrefill } from '@/lib/wa';
+import { buildWaPrefill } from '@/lib/wa';
 
 const inputClass =
   'border border-border-strong rounded-[11px] px-3.5 py-3 text-[15px] text-ink bg-bg transition-shadow focus:outline-none focus:border-brand focus:shadow-[0_0_0_3px_rgba(27,194,75,.15)]';
@@ -14,34 +14,10 @@ export function ContactForm() {
   const { lang } = useLanguage();
   const t = { ...common[lang], ...contact[lang] };
   const serviceOptions = SERVICE_OPTS[lang];
-  const [sent, setSent] = useState(false);
   const [form, setForm] = useState({ name: '', phone: '', email: '', service: '', message: '' });
 
   const setField = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
   const waPrefill = buildWaPrefill(lang, form);
-
-  if (sent) {
-    return (
-      <div className="text-center py-9 px-3">
-        <div className="grid place-items-center w-16 h-16 rounded-[18px] bg-[linear-gradient(140deg,#57E23A,#0FA23C)] text-white text-3xl mx-auto">
-          ✓
-        </div>
-        <h2 className="font-heading font-bold text-2xl tracking-[-0.02em] mt-[22px] mb-0">{t.sentTitle}</h2>
-        <p className="text-[15.5px] leading-[1.6] text-[#5b6a61] mt-3 mx-auto mb-0 max-w-[34ch]">
-          {t.sentBody}
-        </p>
-        <a
-          href={waLink}
-          target="_blank"
-          rel="noopener"
-          className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-xl px-[22px] py-[13px] text-[15px] font-semibold mt-[22px] transition-colors hover:bg-whatsapp-hover"
-        >
-          <span className="text-[17px]">✆</span>
-          {t.sentCta}
-        </a>
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -89,21 +65,15 @@ export function ContactForm() {
             className={`${inputClass} resize-y`}
           />
         </label>
-        <div className="flex flex-wrap gap-[11px] mt-1">
-          <button
-            onClick={() => setSent(true)}
-            className="inline-flex items-center gap-[9px] bg-ink !text-white border-none rounded-xl px-6 py-3.5 text-[15px] font-semibold cursor-pointer transition-colors hover:bg-brand hover:!text-white"
-          >
-            {t.submit} <span className="opacity-60">→</span>
-          </button>
+        <div className="mt-1">
           <a
             href={waPrefill}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-xl px-6 py-3.5 text-[15px] font-semibold transition-colors hover:bg-whatsapp-hover"
+            className="flex w-full items-center justify-center gap-[9px] rounded-xl bg-ink px-6 py-3.5 text-[15px] font-semibold !text-white transition-colors hover:bg-brand hover:!text-white"
           >
             <span className="text-[17px]">✆</span>
-            {t.orWhatsapp}
+            {t.submit}
           </a>
         </div>
         <p className="text-[12.5px] text-text-dark-3 mt-0.5 mb-0 leading-relaxed">{t.formNote}</p>

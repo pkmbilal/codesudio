@@ -64,7 +64,9 @@ export default function ContactClient() {
             </span>
             <div>
               <div className="font-heading font-semibold text-[17px]">{t.callTitle}</div>
-              <div className="text-sm text-[#5b6a61] mt-0.5">+966 53 182 6230</div>
+              <div dir="ltr" className="text-sm text-[#5b6a61] mt-0.5 text-left">
+                +966 53 182 6230
+              </div>
             </div>
           </a>
           <a
