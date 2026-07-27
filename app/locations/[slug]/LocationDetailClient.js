@@ -16,6 +16,37 @@ import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { ProcessStep } from '@/components/cards/ProcessStep';
 import { ServiceCardLight } from '@/components/cards/ServiceCard';
 
+function WhatsAppIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-6c-.2-.1-1.4-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.5.3-.5v-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3A2.8 2.8 0 0 0 6 8.9a4.8 4.8 0 0 0 1 2.5 11 11 0 0 0 4.2 3.7c.6.3 1 .4 1.4.5a3.3 3.3 0 0 0 1.5.1c.5-.1 1.4-.6 1.6-1.1s.2-1 .1-1.1-.2-.2-.4-.3z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
+function CalendarIcon() {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path
+        d="M7 3v3M17 3v3M4.5 9.2h15M6.5 5h11A2.5 2.5 0 0 1 20 7.5v10A2.5 2.5 0 0 1 17.5 20h-11A2.5 2.5 0 0 1 4 17.5v-10A2.5 2.5 0 0 1 6.5 5z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8 13h3M8 16h6"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
 export default function LocationDetailClient({ slug }) {
   const { lang } = useLanguage();
   const t = { ...common[lang], ...locationsCopy[lang] };
@@ -52,22 +83,27 @@ export default function LocationDetailClient({ slug }) {
               <p className="text-[clamp(16px,2.2vw,20px)] leading-[1.6] text-muted mt-[18px] mb-0 max-w-[44ch]">
                 {location.heroSub}
               </p>
-              <div className="flex gap-[13px] flex-wrap mt-[30px]">
+              <div className="grid grid-cols-2 gap-3 mt-[30px] sm:flex sm:flex-wrap">
                 <a
                   href={waLink}
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                  className="inline-flex h-[54px] w-full items-center justify-center gap-2 bg-whatsapp !text-white rounded-[13px] px-3 text-center text-[12.5px] font-semibold leading-[1.12] shadow-[0_8px_22px_-8px_rgba(37,211,102,.6)] transition-all hover:bg-whatsapp-hover hover:-translate-y-px sm:h-auto sm:w-auto sm:gap-[9px] sm:px-6 sm:py-3.5 sm:text-[15.5px] sm:leading-normal"
                 >
-                  <span className="text-lg">+</span>
+                  <span className="shrink-0">
+                    <WhatsAppIcon />
+                  </span>
                   {t.heroCtaPrimary}
                 </a>
                 <a
                   href={waLink}
                   target="_blank"
                   rel="noopener"
-                  className="inline-flex items-center bg-ink !text-white rounded-[13px] px-6 py-3.5 text-[15.5px] font-semibold transition-colors hover:bg-brand hover:!text-white"
+                  className="inline-flex h-[54px] w-full items-center justify-center gap-2 bg-ink !text-white rounded-[13px] px-3 text-center text-[12.5px] font-semibold leading-[1.12] transition-colors hover:bg-brand hover:!text-white sm:h-auto sm:w-auto sm:px-6 sm:py-3.5 sm:text-[15.5px] sm:leading-normal"
                 >
+                  <span className="shrink-0">
+                    <CalendarIcon />
+                  </span>
                   {t.bookCall}
                 </a>
               </div>
@@ -215,22 +251,27 @@ export default function LocationDetailClient({ slug }) {
             <p className="text-[clamp(15px,2.2vw,18px)] leading-[1.6] text-text-dark-1 mt-[18px] mx-auto mb-0 max-w-[50ch]">
               {t.ctaSub}
             </p>
-            <div className="flex gap-[13px] flex-wrap justify-center mt-7">
+            <div className="grid grid-cols-2 gap-3 justify-center mt-7 sm:flex sm:flex-wrap">
               <a
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center gap-[9px] bg-whatsapp !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-all hover:bg-whatsapp-hover hover:-translate-y-px"
+                className="inline-flex h-[54px] w-full items-center justify-center gap-2 bg-whatsapp !text-white rounded-[13px] px-3 text-center text-[12.5px] font-semibold leading-[1.12] transition-all hover:bg-whatsapp-hover hover:-translate-y-px sm:h-auto sm:w-auto sm:gap-[9px] sm:px-[26px] sm:py-[15px] sm:text-[15.5px] sm:leading-normal"
               >
-                <span className="text-lg">+</span>
+                <span className="shrink-0">
+                  <WhatsAppIcon />
+                </span>
                 {t.heroCtaPrimary}
               </a>
               <a
                 href={waLink}
                 target="_blank"
                 rel="noopener"
-                className="inline-flex items-center bg-white/[0.08] border border-white/20 !text-white rounded-[13px] px-[26px] py-[15px] text-[15.5px] font-semibold transition-colors hover:bg-white/[0.13] hover:!text-white"
+                className="inline-flex h-[54px] w-full items-center justify-center gap-2 bg-white/[0.08] border border-white/20 !text-white rounded-[13px] px-3 text-center text-[12.5px] font-semibold leading-[1.12] transition-colors hover:bg-white/[0.13] hover:!text-white sm:h-auto sm:w-auto sm:px-[26px] sm:py-[15px] sm:text-[15.5px] sm:leading-normal"
               >
+                <span className="shrink-0">
+                  <CalendarIcon />
+                </span>
                 {t.bookCall}
               </a>
             </div>

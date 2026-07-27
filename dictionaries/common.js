@@ -1,6 +1,6 @@
 export const common = {
   en: {
-    bookCall: 'Book a Discovery Call',
+    bookCall: 'Book a Call',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
     heroCtaPrimary: 'Chat on WhatsApp',
