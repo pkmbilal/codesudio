@@ -108,8 +108,8 @@ export default function LocationDetailClient({ slug }) {
                 </a>
               </div>
             </div>
-            <div className="animate-reveal motion-reduce:animate-none relative min-h-[280px]">
-              <div className="absolute inset-0 rounded-3xl bg-[linear-gradient(150deg,#0C1410,#13251A)] overflow-hidden shadow-[0_26px_60px_-30px_rgba(12,20,16,.5)]">
+            <div className="animate-reveal motion-reduce:animate-none relative sm:min-h-[280px]">
+              <div className="relative rounded-3xl bg-[linear-gradient(150deg,#0C1410,#13251A)] overflow-hidden shadow-[0_26px_60px_-30px_rgba(12,20,16,.5)] sm:absolute sm:inset-0">
                 <div
                   className="absolute inset-0"
                   style={{
@@ -118,7 +118,7 @@ export default function LocationDetailClient({ slug }) {
                     backgroundSize: '32px 32px',
                   }}
                 />
-                <div className="relative p-7 h-full flex flex-col justify-center gap-3.5">
+                <div className="relative min-h-[300px] px-7 py-10 flex flex-col justify-center gap-3.5 sm:h-full sm:min-h-0 sm:p-7">
                   <span className="font-mono text-[64px] font-semibold text-white/[0.07] leading-none">
                     {location.code}
                   </span>
@@ -261,7 +261,8 @@ export default function LocationDetailClient({ slug }) {
                 <span className="shrink-0">
                   <WhatsAppIcon />
                 </span>
-                {t.heroCtaPrimary}
+                <span className="sm:hidden">Chat With us</span>
+                <span className="hidden sm:inline">{t.heroCtaPrimary}</span>
               </a>
               <a
                 href={waLink}
