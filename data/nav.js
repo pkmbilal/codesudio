@@ -19,6 +19,7 @@ export const FOOTER_LINKS = {
   en: [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
+    { label: 'Locations', href: '/locations' },
     { label: 'Portfolio', href: '/#work' },
     { label: 'Products', href: '/#products' },
     { label: 'About', href: '/about' },
