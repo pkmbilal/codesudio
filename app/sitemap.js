@@ -1,8 +1,9 @@
 import { SITE_URL } from "@/lib/seo";
 import { ORDER } from "@/data/services";
+import { LOCATION_ORDER } from "@/data/locations";
 
 export default function sitemap() {
-  const staticRoutes = ["", "/about", "/contact", "/services"].map((path) => ({
+  const staticRoutes = ["", "/about", "/contact", "/services", "/locations"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: new Date(),
     changeFrequency: path === "" ? "weekly" : "monthly",
@@ -16,5 +17,12 @@ export default function sitemap() {
     priority: 0.7,
   }));
 
-  return [...staticRoutes, ...serviceRoutes];
+  const locationRoutes = LOCATION_ORDER.map((slug) => ({
+    url: `${SITE_URL}/locations/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.65,
+  }));
+
+  return [...staticRoutes, ...serviceRoutes, ...locationRoutes];
 }

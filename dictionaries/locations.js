@@ -1,0 +1,46 @@
+export const locationsCopy = {
+  en: {
+    crumbLocations: 'Locations',
+    indexEyebrow: 'Locations',
+    indexTitle: 'Software, apps and SEO for Saudi business hubs.',
+    indexSub:
+      'Codesudio builds custom software, websites, mobile apps, ERP systems and SEO foundations for companies across Saudi Arabia.',
+    indexIntroTitle: 'Local pages, real services.',
+    indexIntro:
+      'Each city page explains how we support businesses in that market without changing the core promise: practical software, clean design and dependable launch support.',
+    detailEyebrow: 'Local software partner',
+    servicesEyebrow: 'What we build',
+    servicesTitle: 'Digital systems for local operations and growth.',
+    localEyebrow: 'Local fit',
+    localTitle: 'Built around how businesses in this city actually work.',
+    signalsEyebrow: 'Local signals',
+    faqEyebrow: 'Questions',
+    faqTitle: 'Common questions about working with Codesudio locally.',
+    otherTitle: 'Other locations',
+    otherAll: 'View all locations',
+    ctaTitle: 'Need a software team for your city?',
+    ctaSub: 'Tell us what you are trying to build. We reply on WhatsApp and help shape the next step.',
+  },
+  ar: {
+    crumbLocations: 'Locations',
+    indexEyebrow: 'Locations',
+    indexTitle: 'Software, apps and SEO for Saudi business hubs.',
+    indexSub:
+      'Codesudio builds custom software, websites, mobile apps, ERP systems and SEO foundations for companies across Saudi Arabia.',
+    indexIntroTitle: 'Local pages, real services.',
+    indexIntro:
+      'Each city page explains how we support businesses in that market without changing the core promise: practical software, clean design and dependable launch support.',
+    detailEyebrow: 'Local software partner',
+    servicesEyebrow: 'What we build',
+    servicesTitle: 'Digital systems for local operations and growth.',
+    localEyebrow: 'Local fit',
+    localTitle: 'Built around how businesses in this city actually work.',
+    signalsEyebrow: 'Local signals',
+    faqEyebrow: 'Questions',
+    faqTitle: 'Common questions about working with Codesudio locally.',
+    otherTitle: 'Other locations',
+    otherAll: 'View all locations',
+    ctaTitle: 'Need a software team for your city?',
+    ctaSub: 'Tell us what you are trying to build. We reply on WhatsApp and help shape the next step.',
+  },
+};
