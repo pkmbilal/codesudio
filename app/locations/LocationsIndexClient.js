@@ -36,8 +36,8 @@ export default function LocationsIndexClient() {
         </div>
       </section>
 
-      <section className="max-w-[1100px] mx-auto px-[22px] py-[clamp(48px,7vw,84px)] grid grid-cols-[minmax(0,0.72fr)_minmax(300px,1.28fr)] max-[860px]:grid-cols-1 gap-[clamp(34px,5vw,58px)] items-start">
-        <div className="animate-reveal motion-reduce:animate-none">
+      <section className="max-w-[1100px] mx-auto px-[22px] py-[clamp(48px,7vw,84px)]">
+        <div className="animate-reveal motion-reduce:animate-none max-w-[680px]">
           <SectionEyebrow>{t.localEyebrow}</SectionEyebrow>
           <h2 className="font-heading font-bold text-[clamp(24px,3.6vw,36px)] leading-[1.12] tracking-[-0.025em] mt-3.5 mb-0">
             {t.indexIntroTitle}
@@ -46,7 +46,7 @@ export default function LocationsIndexClient() {
             {t.indexIntro}
           </p>
         </div>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {locations.map((location) => (
             <ServiceCardLight key={location.slug} service={location} />
           ))}
