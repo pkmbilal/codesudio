@@ -4,6 +4,7 @@ import {
   IBM_Plex_Mono,
   IBM_Plex_Sans_Arabic,
 } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/language-context";
 import { LangShell } from "@/components/layout/LangShell";
@@ -99,6 +100,9 @@ export default function RootLayout({ children }) {
           <LangShell>{children}</LangShell>
         </LanguageProvider>
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   );
 }
