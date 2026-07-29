@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { MessageCircle } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
 import { common } from '@/dictionaries/common';
 import { PRODUCTS } from '@/data/products';
@@ -114,7 +115,7 @@ export default function ProductsIndexClient() {
                 rel="noopener"
                 className="inline-flex items-center gap-[9px] rounded-[13px] bg-whatsapp px-[26px] py-[15px] text-[15.5px] font-semibold !text-white transition-all hover:-translate-y-px hover:bg-whatsapp-hover"
               >
-                <span className="text-lg">âœ†</span>
+                <MessageCircle aria-hidden="true" className="h-[18px] w-[18px]" strokeWidth={2.4} />
                 {t.heroCtaPrimary}
               </a>
               <Link
