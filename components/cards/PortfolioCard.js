@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 export function PortfolioCard({ item }) {
   const CardTag = item.url ? 'a' : 'div';
+  const imageSrc = item.image || `https://picsum.photos/seed/${item.seed}/800/500`;
   const cardProps = item.url
     ? {
         href: item.url,
@@ -18,7 +19,7 @@ export function PortfolioCard({ item }) {
     >
       <div className="h-[170px] relative overflow-hidden">
         <Image
-          src={`https://picsum.photos/seed/${item.seed}/800/500`}
+          src={imageSrc}
           alt={item.name}
           fill
           sizes="(max-width: 768px) 100vw, 400px"
