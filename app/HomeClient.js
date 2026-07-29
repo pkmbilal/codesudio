@@ -62,7 +62,7 @@ export default function HomeClient() {
               {t.heroCtaPrimary}
             </a>
             <a
-              href="#work"
+              href="/portfolio"
               className="inline-flex items-center gap-2 bg-white border border-border-strong text-ink rounded-[13px] px-6 py-[15px] text-[15.5px] font-semibold transition-colors hover:border-ink"
             >
               {t.heroCtaSecondary} <span className="opacity-50">→</span>
