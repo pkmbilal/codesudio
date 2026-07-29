@@ -3,6 +3,8 @@ import { waLink } from '@/lib/wa';
 
 export function ProductCard({ product }) {
   const feat = product.feat;
+  const imageSrc = product.image || `https://picsum.photos/seed/${product.seed}/800/500`;
+  const linkHref = product.url || waLink;
 
   return (
     <div
@@ -14,7 +16,7 @@ export function ProductCard({ product }) {
     >
       <div className="h-[150px] relative overflow-hidden">
         <Image
-          src={`https://picsum.photos/seed/${product.seed}/800/500`}
+          src={imageSrc}
           alt={product.name}
           fill
           sizes="(max-width: 768px) 100vw, 360px"
@@ -46,7 +48,7 @@ export function ProductCard({ product }) {
           {product.desc}
         </p>
         <a
-          href={waLink}
+          href={linkHref}
           target="_blank"
           rel="noopener"
           className={`mt-auto inline-flex items-center gap-[7px] text-sm font-semibold transition-[gap] hover:gap-[11px] ${
