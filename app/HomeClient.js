@@ -23,6 +23,7 @@ import { TestimonialCard } from '@/components/cards/TestimonialCard';
 import { FAQAccordion } from '@/components/home/FAQAccordion';
 import zatcaLogo from '@/public/zatca.webp';
 import vision2030Logo from '@/public/vision2030.webp';
+import heroImage from '@/public/Hero_Image.webp';
 
 export default function HomeClient() {
   const { lang } = useLanguage();
@@ -70,27 +71,17 @@ export default function HomeClient() {
           </div>
         </div>
         <div className="animate-reveal motion-reduce:animate-none relative min-h-[400px]">
-          <div className="absolute inset-0 rounded-[26px] bg-[linear-gradient(150deg,#0C1410,#13251A)] overflow-hidden shadow-hero">
+          <div className="absolute inset-0 rounded-[26px] overflow-hidden shadow-hero bg-[#0a1410]">
+            <Image
+              src={heroImage}
+              alt={t.heroTitle}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 480px"
+              className="object-cover"
+            />
             <div className="absolute w-[340px] h-[340px] rounded-full bg-[radial-gradient(circle,#1BC24B55,transparent_68%)] -top-[90px] -end-[70px] blur-[6px]" />
             <div className="absolute w-[260px] h-[260px] rounded-full bg-[radial-gradient(circle,#57E23A44,transparent_68%)] -bottom-20 -start-[60px]" />
-            <div className="relative p-4 h-full flex flex-col gap-3">
-              <div className="flex items-center gap-2 pt-1.5 px-1.5">
-                <span className="w-[11px] h-[11px] rounded-full bg-[#ff5f57]" />
-                <span className="w-[11px] h-[11px] rounded-full bg-[#febc2e]" />
-                <span className="w-[11px] h-[11px] rounded-full bg-[#28c840]" />
-                <span className="ms-2.5 font-mono text-xs text-text-dark-6">codesudio ~ scaneat</span>
-              </div>
-              <div className="relative flex-1 min-h-[250px] rounded-[14px] overflow-hidden bg-[#0a1410]">
-                <Image
-                  src="https://picsum.photos/seed/codesudio-hero/960/640"
-                  alt=""
-                  fill
-                  preload
-                  sizes="(max-width: 768px) 100vw, 480px"
-                  className="object-cover"
-                />
-              </div>
-            </div>
             <div className="absolute bottom-[22px] start-[22px] flex items-center gap-2.5 bg-ink/[0.8] border border-white/[0.13] rounded-[14px] px-[15px] py-3 backdrop-blur-[6px] pointer-events-none">
               <span className="grid place-items-center w-[34px] h-[34px] rounded-[9px] bg-whatsapp !text-white text-base">
                 ✆
