@@ -8,7 +8,7 @@ export const PRODUCTS = {
       desc: 'QR menu + WhatsApp ordering for restaurants. Live, selling and growing right now.',
       cta: 'See ScanEat',
       url: 'https://www.scaneatksa.com',
-      image: '/scaneat-qr-restaurant-portfolio.png',
+      image: '/scaneat-qr-restaurant-portfolio.webp',
       feat: true,
     },
     {
@@ -19,7 +19,7 @@ export const PRODUCTS = {
       desc: 'A browser-based ERP platform for centralising workflows, records and operational visibility.',
       cta: 'See Codesudio ERP',
       url: 'https://erp.codesudio.com',
-      image: '/codesudio-erp-dashboard-portfolio.png',
+      image: '/codesudio-erp-dashboard-portfolio.webp',
       feat: false,
     },
     {
@@ -50,7 +50,7 @@ export const PRODUCTS = {
       desc: 'قائمة QR وطلبات واتساب للمطاعم. منتج مباشر يبيع وينمو الآن.',
       cta: 'استكشف ScanEat',
       url: 'https://www.scaneatksa.com',
-      image: '/scaneat-qr-restaurant-portfolio.png',
+      image: '/scaneat-qr-restaurant-portfolio.webp',
       feat: true,
     },
     {
@@ -61,7 +61,7 @@ export const PRODUCTS = {
       desc: 'منصة ERP عبر المتصفح لتوحيد سير العمل والسجلات ورؤية العمليات في مكان واحد.',
       cta: 'استكشف Codesudio ERP',
       url: 'https://erp.codesudio.com',
-      image: '/codesudio-erp-dashboard-portfolio.png',
+      image: '/codesudio-erp-dashboard-portfolio.webp',
       feat: false,
     },
     {
