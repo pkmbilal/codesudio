@@ -1,0 +1,26 @@
+export const packagesIndex = {
+  en: {
+    crumbPackages: 'Packages',
+    eyebrow: 'Web Design Packages',
+    title: 'Web design packages, priced up front.',
+    sub: 'Three fixed-price web design packages — pick the one that matches where your business is, or talk to us about something custom.',
+    mostPopular: 'Most Popular',
+    whatsIncluded: "What's included",
+    customNoteTitle: 'Need something that doesn’t fit a package?',
+    customNoteLink: 'Browse services',
+    ctaTitle: 'Not sure which package fits?',
+    ctaSub: "Tell us about your business. We reply on WhatsApp — usually within the hour.",
+  },
+  ar: {
+    crumbPackages: 'الباقات',
+    eyebrow: 'باقات تصميم المواقع',
+    title: 'باقات تصميم مواقع، بسعر واضح من البداية.',
+    sub: 'ثلاث باقات تصميم مواقع بسعر ثابت — اختر ما يناسب مرحلة عملك، أو تواصل معنا لشيء مخصّص.',
+    mostPopular: 'الأكثر طلباً',
+    whatsIncluded: 'ما الذي تتضمنه',
+    customNoteTitle: 'تحتاج شيئاً لا تغطيه إحدى الباقات؟',
+    customNoteLink: 'تصفّح الخدمات',
+    ctaTitle: 'لست متأكداً أي باقة تناسبك؟',
+    ctaSub: 'أخبرنا عن عملك. نردّ عبر واتساب — عادةً خلال ساعة.',
+  },
+};

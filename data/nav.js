@@ -1,6 +1,7 @@
 export const NAV = {
   en: [
     { label: 'Services', href: '/services' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Portfolio', href: '/portfolio' },
     { label: 'Products', href: '/products' },
     { label: 'About', href: '/about' },
@@ -8,6 +9,7 @@ export const NAV = {
   ],
   ar: [
     { label: 'الخدمات', href: '/services' },
+    { label: 'الباقات', href: '/packages' },
     { label: 'الأعمال', href: '/portfolio' },
     { label: 'المنتجات', href: '/products' },
     { label: 'من نحن', href: '/about' },
@@ -19,6 +21,7 @@ export const FOOTER_LINKS = {
   en: [
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
+    { label: 'Packages', href: '/packages' },
     { label: 'Locations', href: '/locations' },
     { label: 'Portfolio', href: '/portfolio' },
     { label: 'Products', href: '/products' },
@@ -28,6 +31,7 @@ export const FOOTER_LINKS = {
   ar: [
     { label: 'الرئيسية', href: '/' },
     { label: 'الخدمات', href: '/services' },
+    { label: 'الباقات', href: '/packages' },
     { label: 'الأعمال', href: '/portfolio' },
     { label: 'المنتجات', href: '/products' },
     { label: 'من نحن', href: '/about' },
