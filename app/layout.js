@@ -67,7 +67,8 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: { icon: "/favicon.ico" },
+  icons: { icon: "/favicon.ico", apple: "/pwa-icon/180" },
+  appleWebApp: { capable: true, title: "Codesudio", statusBarStyle: "default" },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -81,6 +82,13 @@ export const metadata = {
     title: "Codesudio — Custom software & digital products, built for Saudi businesses.",
     description: DESCRIPTION,
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#FBFCFB",
 };
 
 export default function RootLayout({ children }) {

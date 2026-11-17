@@ -78,6 +78,27 @@ a:hover {
   color: var(--color-brand-darker);
 }
 
+/* Native-app feel on touch devices (desktop unaffected) */
+@media (max-width: 767px) {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+  }
+
+  a, button {
+    touch-action: manipulation;
+  }
+
+  nav a, nav button, header button {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
 ::selection {
   background: var(--color-brand-bright);
   color: var(--color-ink);
