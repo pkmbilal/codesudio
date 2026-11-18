@@ -9,6 +9,10 @@ export const contentType = "image/png";
 export default async function Image() {
   const logoData = await readFile(join(process.cwd(), "public/logo-mark.png"), "base64");
   const logoSrc = `data:image/png;base64,${logoData}`;
+  // ImageResponse only bundles a regular-weight font, so load a bold one explicitly.
+  const boldFont = await readFile(
+    join(process.cwd(), "app/fonts/space-grotesk-latin-700-normal.woff")
+  );
 
   return new ImageResponse(
     (
@@ -27,10 +31,15 @@ export default async function Image() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={logoSrc} width={400} height={324} />
         <div style={{ display: "flex", alignItems: "baseline", gap: 14 }}>
-          <span style={{ fontSize: 150, fontWeight: 700, color: "#0C1410" }}>codesudio</span>
+          <span
+            style={{ fontSize: 150, fontWeight: 700, fontFamily: "Space Grotesk", color: "#0C1410" }}
+          >codesudio</span>
         </div>
       </div>
     ),
-    { ...size }
+    {
+      ...size,
+      fonts: [{ name: "Space Grotesk", data: boldFont, weight: 700, style: "normal" }],
+    }
   );
 }
