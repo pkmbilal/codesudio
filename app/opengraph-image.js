@@ -29,9 +29,6 @@ export default async function Image() {
         <div style={{ display: "flex", alignItems: "baseline", gap: 14 }}>
           <span style={{ fontSize: 96, fontWeight: 700, color: "#0C1410" }}>codesudio</span>
         </div>
-        <span style={{ fontSize: 28, color: "#5B6B62" }}>
-          Custom software &amp; digital products, built for Saudi businesses.
-        </span>
       </div>
     ),
     { ...size }
