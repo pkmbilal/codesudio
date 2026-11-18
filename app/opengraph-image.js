@@ -20,14 +20,14 @@ export default async function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: 32,
+          gap: 40,
           background: "#FFFFFF",
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} width={222} height={180} />
+        <img src={logoSrc} width={400} height={324} />
         <div style={{ display: "flex", alignItems: "baseline", gap: 14 }}>
-          <span style={{ fontSize: 96, fontWeight: 700, color: "#0C1410" }}>codesudio</span>
+          <span style={{ fontSize: 150, fontWeight: 700, color: "#0C1410" }}>codesudio</span>
         </div>
       </div>
     ),
