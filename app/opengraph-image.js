@@ -20,16 +20,16 @@ export default async function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          gap: 28,
-          background: "linear-gradient(150deg,#0C1410,#13251A)",
+          gap: 32,
+          background: "#FFFFFF",
         }}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={logoSrc} width={112} height={90} />
+        <img src={logoSrc} width={222} height={180} />
         <div style={{ display: "flex", alignItems: "baseline", gap: 14 }}>
-          <span style={{ fontSize: 72, fontWeight: 700, color: "#fff" }}>codesudio</span>
+          <span style={{ fontSize: 96, fontWeight: 700, color: "#0C1410" }}>codesudio</span>
         </div>
-        <span style={{ fontSize: 28, color: "#9fb0a7" }}>
+        <span style={{ fontSize: 28, color: "#5B6B62" }}>
           Custom software &amp; digital products, built for Saudi businesses.
         </span>
       </div>
