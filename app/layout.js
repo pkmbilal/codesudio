@@ -67,7 +67,13 @@ export const metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: { icon: "/favicon.ico", apple: "/pwa-icon/180" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/pwa-icon/180",
+  },
   appleWebApp: { capable: true, title: "Codesudio", statusBarStyle: "default" },
   openGraph: {
     type: "website",
