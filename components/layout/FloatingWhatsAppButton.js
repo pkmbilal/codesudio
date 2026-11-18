@@ -14,7 +14,7 @@ export function FloatingWhatsAppButton() {
       target="_blank"
       rel="noopener"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-[22px] end-[22px] z-[60] flex h-[54px] w-[54px] items-center justify-center bg-whatsapp !text-white rounded-full shadow-whatsapp font-semibold text-[15px] transition-all hover:bg-whatsapp-hover hover:-translate-y-0.5 sm:h-auto sm:w-auto sm:justify-start sm:gap-[11px] sm:rounded-pill sm:pt-[14px] sm:pb-[14px] sm:ps-[16px] sm:pe-[20px]"
+      className="fixed bottom-[calc(96px+env(safe-area-inset-bottom))] end-[16px] md:bottom-[22px] md:end-[22px] z-[60] flex h-[54px] w-[54px] items-center justify-center bg-whatsapp !text-white rounded-full shadow-whatsapp font-semibold text-[15px] transition-all hover:bg-whatsapp-hover hover:-translate-y-0.5 sm:h-auto sm:w-auto sm:justify-start sm:gap-[11px] sm:rounded-pill sm:pt-[14px] sm:pb-[14px] sm:ps-[16px] sm:pe-[20px]"
     >
       <span className="grid place-items-center w-[30px] h-[30px]">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
